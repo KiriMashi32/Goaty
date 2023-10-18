@@ -65,7 +65,7 @@ Route::post('/goats', function() {
     $g->color = request()->color;
     $g->birthday = request()->birthday;
     $g->save();
-    return redirect('/goats');
+    return redirect('/goats/'.$g->id);
 
 
 });
